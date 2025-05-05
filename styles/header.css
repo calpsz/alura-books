@@ -12,6 +12,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative; /*permite mover os elementos pra todos os lados, no caso, ele só pe relative pra sair do default static pra gente poder mover o .lista-menu pra de baixo do cabeçalho*/
 }
 
 .container {
@@ -23,3 +24,35 @@
     padding: 1em;
 }
 
+.lista-menu {
+    display: none;
+    position: absolute; /*permite que o elemento seja movimentado em relação com o elemento pai*/
+    top: 100%; /*moveu 100% do espaço do cabeçalho*/
+    width: 60vw; /*vw pega a largura da tela, 100 é o total*/
+}
+
+.container__botao:checked ~ .lista-menu { /*~ é um combinador, procura o prox elemento que tem a classe lista-menu*/
+    display: block;
+}
+
+.lista-menu__titulo, .lista-menu__item {
+    padding: 1em;
+    background-color: var(--branco);
+}
+
+.lista-menu__titulo {
+    color: var(--laranja);
+    font-weight: 700;
+}
+
+.lista-menu__link {
+    background: var(--azul-degrade); /*aplicou a cor ao background*/
+    -webkit-background-clip: text; /*criou uma mascara de camada onde tem texto*/
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: uppercase;
+}
+
+.container__botao {
+    display: none;
+}
