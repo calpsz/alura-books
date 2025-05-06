@@ -29,6 +29,7 @@
     position: absolute; /*permite que o elemento seja movimentado em relação com o elemento pai*/
     top: 100%; /*moveu 100% do espaço do cabeçalho*/
     width: 60vw; /*vw pega a largura da tela, 100 é o total*/
+    z-index: 1000;
 }
 
 .container__botao:checked ~ .lista-menu { /*~ é um combinador, procura o prox elemento que tem a classe lista-menu*/
