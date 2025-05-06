@@ -71,7 +71,7 @@
 .descricao__texto {
     font-size: 0.87rem;
     text-align: start;
-    width: 100%;
+    width: 90%;
     font-size: 0.85rem;
 }
 
@@ -90,4 +90,8 @@
     text-decoration: none;
     color: var(--branco);
     font-weight: 700;
+}
+
+.descricao__estrelas {
+    padding-bottom: 0.5em;
 }
