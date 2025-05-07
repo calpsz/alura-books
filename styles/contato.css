@@ -40,3 +40,27 @@
     color: transparent;
     background: transparent;
 }
+
+@media screen and (min-width: 1024px) {
+    .contato {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2em 0 2em 0;
+    }
+
+    .contato__titulo {
+        font-size: 1.5em;
+        line-height: 1.5em;
+    }
+
+    .contato__descricao {
+        margin-right: 5em;
+        width: 30%;
+        line-height: 1.5em;
+    }
+
+    .contato__email {
+        width: 30%;
+    }
+}
