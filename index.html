@@ -308,7 +308,27 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
-        const swiper = new Swiper('.swiper', {
+        if(window.screen.width >= 1024){
+            const swiper = new Swiper('.swiper', {
+            loop: true,
+
+            spaceBetween: 15, /*espaço entre cada slide*/
+            slidesPerView: 3, 
+            centeredSlides: true,
+
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+                clickable: true,
+            } 
+        });
+        } else {
+            const swiper = new Swiper('.swiper', {
             loop: true,
 
             spaceBetween: 15, /*espaço entre cada slide*/
@@ -318,9 +338,10 @@
             pagination: {
                 el: '.swiper-pagination',
                 type: 'bullets',
-                clickable: true,
+                clickable: false,
             }
         });
+        }
     </script>
 </body>
 </html>
