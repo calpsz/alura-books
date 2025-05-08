@@ -15,7 +15,7 @@
     <header class="cabecalho">
         <div class="container">
             <input type="checkbox" id="menu" class="container__botao"> <!--detecta quando clica-->
-            <label for="menu"> <!--associa os elementos dentro dele com outro elemento através do id-->
+            <label for="menu" class="container__rotulo"> <!--associa os elementos dentro dele com outro elemento através do id-->
                 <span class="cabecalho__menu-hamburguer container__imagem"></span>
             </label>
             <ul class="lista-menu">
@@ -43,7 +43,7 @@
         <!--Config para min-width 1024px-->
         <ul class="opcoes">
             <input type="checkbox" id="opcoes-menu" class="opcoes__botao">
-            <label for="opcoes-menu">
+            <label for="opcoes-menu" class="opcoes__rotulo">
                 <li class="opcoes__item">Categorias</li>
             </label>
             <ul class="lista-menu">
@@ -84,6 +84,7 @@
             </a>
         </div>
     </header>
+    
     <section class="banner">
         <h2 class="banner__titulo">Já sabe por onde começar?</h2>
         <p class="banner__texto">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>

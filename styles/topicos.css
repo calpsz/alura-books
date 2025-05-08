@@ -41,6 +41,10 @@
     .topicos__item {
         margin: 2.5em 0.5em; /*cima baixo ~ direita esquerda*/
     }
+
+    .topicos__link:hover {
+        background-color: var(--laranja-hover);
+    }
 }
 
 @media screen and (min-width: 1728px) {

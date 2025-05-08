@@ -114,9 +114,21 @@
         top: 60%;
     }
 
+    .swiper-slide img {
+        cursor: pointer;
+    }
+
     .card {
         width: 40%;
         margin: 2em auto;
+    }
+
+    .botoes__item:hover {
+        cursor: pointer;
+    }
+
+    .botoes__ancora:hover {
+        background-color: var(--laranja-hover);
     }
 }
 
