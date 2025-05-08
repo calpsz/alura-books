@@ -42,3 +42,9 @@
         margin: 2.5em 0.5em; /*cima baixo ~ direita esquerda*/
     }
 }
+
+@media screen and (min-width: 1728px) {
+    .topicos {
+        padding: 4em 25vw;
+    }
+}

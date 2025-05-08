@@ -71,9 +71,17 @@
 
 
         <div class="container">
-            <a href="#"><img src="img/Favoritos.svg" alt="meus favoritos" class="container__imagem container__imagem--transparente"></a>
-            <a href="#"><img src="img/Compras.svg" alt="carrinho de compras" class="container__imagem"></a>
-            <a href="#"><img src="img/Usuario.svg" alt="meu perfil" class="container__imagem"></a>
+            <a href="#">
+                <img src="img/Favoritos.svg" alt="meus favoritos" class="container__imagem container__imagem--transparente">
+            </a>
+            <a href="#" class="container__link">
+                <img src="img/Compras.svg" alt="carrinho de compras" class="container__imagem">
+                <p class="container__texto">Minha sacola</p>
+            </a>
+            <a href="#" class="container__link">
+                <img src="img/Usuario.svg" alt="meu perfil" class="container__imagem">
+                <p class="container__texto">Meu perfil</p>
+            </a>
         </div>
     </header>
     <section class="banner">
@@ -84,6 +92,7 @@
     <section class="carrossel">
         <h2 class="carrossel__titulo">Novos lançamentos</h2>
             <!-- Slider main container -->
+            <div class="carrossel__container">
             <div class="swiper">
                 <!-- If we need pagination -->
                 <div class="swiper-pagination"></div>
@@ -129,11 +138,13 @@
                     <a href="#" class="botoes__ancora">Saiba Mais</a>
                 </div>
             </div>
+        </div>
     </section>
 
     <!-- Sessão de mais vendidos -->
     <section class="carrossel">
         <h2 class="carrossel__titulo">Mais Vendidos</h2>
+        <div class="carrossel__container">
             <!-- Slider main container -->
             <div class="swiper">
                 <!-- If we need pagination -->
@@ -181,6 +192,7 @@
                     <a href="#" class="botoes__ancora">Saiba Mais</a>
                 </div>
             </div>
+        </div>
     </section>
 
     <!-- Sessão de tópicos -->
@@ -312,7 +324,7 @@
             const swiper = new Swiper('.swiper', {
             loop: true,
 
-            spaceBetween: 15, /*espaço entre cada slide*/
+            spaceBetween: 30, /*espaço entre cada slide*/
             slidesPerView: 3, 
             centeredSlides: true,
 

@@ -66,6 +66,10 @@
     display: none;
 }
 
+.container__texto {
+    display: none;
+}
+
 @media screen and (min-width: 1024px) {
     .container__titulo, .container__titulo--negrito {
         font-family: var(--font-secundaria);
@@ -106,5 +110,26 @@
 
     .opcoes__botao {
         display: none;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .container__link {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: var(--preto);
+    }
+
+    .cabecalho {
+        padding: 0 2em;
+    }
+
+    .opcoes {
+        margin-right: auto; /*no caso de flexbox, se o valor da margem é alto o suficiente, ele vai tentar preencher todo o espaço, nesse caso, a margem da direita é totalmente preenchida, "jogando" os elementos pra esquerda*/
+    }
+
+    .container__texto {
+        display: block;
     }
 }
