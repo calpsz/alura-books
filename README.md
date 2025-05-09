@@ -1,15 +1,15 @@
-<h1 align="center"> Alura Books </h1>
+<h1 align="center">:blue_book: :orange_book: Alura Books :orange_book: :blue_book:</h1>
 
 O AluraBooks é o 3º projeto que foi desenvolvido na Formação Front End da Alura!
 
-<h2>Tecnologias</h2>
+<h2>:zap: Tecnologias</h2>
 
 * HTML
 * CSS
 * Figma
 * Git / GitHub
 
-<h2>Desenvolvimento do projeto</h2>
+<h2>:computer: Desenvolvimento do projeto</h2>
 
 Foi adotado a abordagem "Mobile First" para o desenvolvimento desse projeto. Ou seja, a construção do site foi feita primeiramente visando a usabilidade em dispositivos móveis e posteriormente para desktop.
 
@@ -22,7 +22,7 @@ Para o design, foi utilizado um projeto previamente desenvolvido pela equipe Alu
 
 Confira o projeto na íntegra clicando aqui!
 
-<h2>Utilização de frameworks</h2>
+<h2>:wrench: Utilização de frameworks</h2>
 
 Foi apresentado o SwiperJs, um framework de JavaScript, que foi utilizado para criar o carrossel com os livros na sessão "Novos Lançamentos" e "Mais Vendidos".
 
